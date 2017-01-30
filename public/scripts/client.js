@@ -34,11 +34,11 @@ function displayTasks(tasks) {
       // $saveButton.data('id', task.id);
       // $form.append($saveButton);
 
-      var $deleteButton = $('<button class = "tasks btn-danger" id = "delete">Delete</button>');
+      var $deleteButton = $('<button class = "tasks btn-danger raised:active" id = "delete">Delete</button>');
       $deleteButton.data('id', task.id);
       $li.append($deleteButton);
 
-      var $completedButton = $('<button class = "tasks btn-success" id = "completed">Completed!</button>');
+      var $completedButton = $('<button class = "tasks btn-success active" id = "completed">Completed!</button>');
       $completedButton.data('id', task.id);
       $li.append($completedButton);
 
@@ -50,7 +50,7 @@ function displayTasks(tasks) {
 
       $li.append('<p class = "done">' + task.task + '<p/>');
 
-      var $deleteButton = $('<button class = "tasks btn-danger" id = "delete">Delete</button>');
+      var $deleteButton = $('<button class = "tasks btn-danger active" id = "delete">Delete</button>');
       $deleteButton.data('id', task.id);
       $li.append($deleteButton);
 
@@ -65,6 +65,7 @@ function addTask(event) {
 
   var formData = $(this).serialize();
   $(this).closest('input').val('');
+  $(this).find('input[type=text]').val('');
   $.ajax({
     url: '/tasks',
     type: 'POST',

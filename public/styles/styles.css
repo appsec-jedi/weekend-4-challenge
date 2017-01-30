@@ -5,8 +5,6 @@ body {
 .done {
   text-decoration: line-through;
 }
-.tasks{
-}
 button {
   border-radius: 5px;
   margin: 5px;
@@ -14,9 +12,15 @@ button {
 ul {
   list-style: none;
 }
+h2 {
+  font-size: 30px;
+}
 p {
-  font-size: 20px;
+  font-size: 25px;
 }
 li:hover{
   text-shadow: 2px 2px #ffffff;
+}
+button:active {
+  background-color: #525252;
 }
