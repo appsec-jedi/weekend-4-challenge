@@ -1,0 +1,22 @@
+body {
+  background-color: #c2b800;
+  background-image: url("https://www.transparenttextures.com/patterns/notebook.png");
+}
+.done {
+  text-decoration: line-through;
+}
+.tasks{
+}
+button {
+  border-radius: 5px;
+  margin: 5px;
+}
+ul {
+  list-style: none;
+}
+p {
+  font-size: 20px;
+}
+li:hover{
+  text-shadow: 2px 2px #ffffff;
+}
